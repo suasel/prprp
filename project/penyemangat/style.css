@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../../assets/pxfuel.jpg);
+    background-position: center;
+    
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 45rem;
+}
+
+.card {
+    position: relative;
+    left: 0;
+    width: 3rem;
+    border-radius: 5rem;
+    height: 25rem;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .3);
+    flex: .15;
+    max-width: 9rem; /* Tambahkan batas maksimal lebar */
+}
+
+.card img {
+    position: relative;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.card:hover {
+    flex: 1 1 0; /* Memperbesar kartu saat hover */
+    max-width: 14rem; /* Tetapkan batas maksimal lebar saat hover */
+    cursor: pointer;
+    border-radius: 1rem; /* Ubah radius border saat hover */
+}
